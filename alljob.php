@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+
+
 <style>
 
 
@@ -34,7 +34,7 @@ table th {
 
 </style>
 
-<body>
+
 
 <?php
 $servername = "localhost";
@@ -81,5 +81,5 @@ else {
 $conn->close();
 ?>
 
-</body>
-</html>
+
+
