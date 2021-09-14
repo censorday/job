@@ -104,7 +104,7 @@ table th {
  </section>  
 
 <?php
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "id17221179_avsjob";
 $password = "P@vashishth99";
 $dbname = "id17221179_job";
