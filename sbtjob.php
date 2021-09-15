@@ -169,7 +169,7 @@ table th {
 <br>
 <h1>Previous Job</h1>
 <small><b>Recently submitted job will be shown below</b></small>
-<br>
+<br><br>
 
   </center>
 
