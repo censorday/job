@@ -192,7 +192,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<center><div ><table> <tr>
-    <th>Comp. ID<th>
+    <th>Comp. ID</th>
     <th>Company</th>
     <th>Post</th>
     <th>Salary</th>
