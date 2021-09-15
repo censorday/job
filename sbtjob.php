@@ -129,6 +129,9 @@ table th {
    <input placeholder="Est. Salary"
      class="form1" type="varchar" name="sal" >
 
+     <input class="form1" placeholder="Published on"  type="text" onfocus="(this.type='date')"   name="pblh" >
+
+
     <select name="loc" id="" class="form1">
 <option value="">Location</option>
 <option value="">Delhi</option>
@@ -152,9 +155,8 @@ table th {
     
    <textarea  value="Discription on"
     class="form1"  name="dis" > </textarea>
-<br>
-   <small><b>Published on: </b></small>
-    <input class="form1"  type="date" name="pblh" >
+
+   
 		
     <br>
 		<input type="submit" class="apply" value="Submit">
