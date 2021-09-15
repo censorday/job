@@ -153,7 +153,7 @@ table th {
 <option value="">Temporary</option>
 </select>
     
-   <textarea  value="Discription on"
+   <textarea  rows="4" placeholder="Discription "
     class="form1"  name="dis" > </textarea>
 
    
