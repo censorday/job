@@ -27,7 +27,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
  $sql = "INSERT INTO comp  VALUES ('$id','$cmp','$pst','$sal','$loc','$cat','$pbl')";
 
  if(mysqli_query($conn, $sql)){
-            echo "<center><h3>Job successfully UPDATED</h3><br><br><p>Now you are redirecting to previous page</p></center>"; 
+            echo "<center><br><br><br><h3>Yor Job successfully PUBLISHED</h3><br><br><p>Now you are redirecting to previous page</p></center>"; 
  
 
         }
