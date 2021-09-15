@@ -73,7 +73,7 @@ table {
   margin: 0;
   border-spacing: 0 8px;
   padding: 0;
-  width: 85%;
+  width: 80%;
   table-layout: fixed;
 }
 
