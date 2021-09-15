@@ -439,7 +439,7 @@ color: white;
 </select>
  
     
- <a href="/job.php"><input type="submit" value="Search" class="btn"></a>
+ <a href="/job.php"><input type="submit" value="Search a job" class="btn"></a>
   </form>
   
 <h5><i>( or search Jobs Made for you )<i></h5>
