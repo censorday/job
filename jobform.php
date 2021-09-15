@@ -18,6 +18,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
       echo  $cid=$_GET['cid'];
         $cn=$_GET['cn'];
         $po=$_GET['po'];
+        $sl=$_GET['sl'];
         $ct=$_GET['ct'];
         $tp=$_GET['tp'];
         $dt=$_GET['dt'];
@@ -150,8 +151,8 @@ table th {
     <th>Published on</th>
     </tr>
       <br> 
-   <tr><td>  ". $cid. " </td><td> ". $cn. "  </td><td>  " .po. "  </td><td>  " .  $row["salary"] .
-        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td></tr> 
+   <tr><td>  <?php echo "$cid"?> </td><td><?php echo "$cn"?>  </td><td><?php echo "$po"?>  </td><td><?php echo "$sl"?> 
+        "  </td><td> "<?php echo "$ct"?> ."  </td><td> <?php echo "$tp"?> </td><td><?php echo "$dt"?> </td></tr> 
     </table><br>
           
           
