@@ -106,10 +106,10 @@ table th {
  </section>  
 
 <?php
-$servername = "127.0.0.1";
-$username = "id17221179_avsjob";
-$password = "P@vashishth99";
-$dbname = "id17221179_job";
+$servername = "sql6.freesqldatabase.com";
+$username = "sql6437316";
+$password = "r94vS6MuAu";
+$dbname = "sql6437316";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
