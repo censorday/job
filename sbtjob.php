@@ -132,11 +132,17 @@ table th {
     <input placeholder="Location"
     class="form1" type="varchar" name="loc" >
 
-  <input  placeholder="Category"
-     class="form1" type="text" name="catg" >
-     <br>
- 
-    <textarea placeholder="Discription "  name="dis" > </textarea>
+       <select name="catg" id="" class="form1">
+<option value="">Category</option>
+<option value="">Full Time</option>
+<option value="">Part Time</option>
+<option value="">Freelance</option>
+<option value="">Internship</option>
+<option value="">Temporary</option>
+</select>
+    
+   <textarea  value="Discription on"
+    class="form1"  name="dis" > </textarea>
 <br>
    <small><b>Published on: </b></small>
     <input class="form1"  type="date" name="pblh" >
