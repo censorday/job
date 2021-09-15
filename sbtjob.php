@@ -127,7 +127,7 @@ table th {
      class="form1" type="text" name="pst" >
 
    <input placeholder="Est. Salary"
-     class="form1" type="varchar" name="sal" >
+     class="form1" type="int" name="sal" >
 
      <input class="form1" placeholder="Published on"  type="text" onfocus="(this.type='date')"   name="pblh" >
 
