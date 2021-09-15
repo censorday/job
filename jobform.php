@@ -95,7 +95,8 @@ table td {
 }
 
 table th {
-  font-size: 12px;
+    background-color:#d9d9d9;
+  font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
