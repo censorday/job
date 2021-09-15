@@ -91,6 +91,7 @@ table th,
 table td {
   padding: 10px;
   text-align: center;
+  height:140%;
 }
 
 table th {
