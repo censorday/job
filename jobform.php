@@ -132,9 +132,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
         
         <body>
         <section class='back'>
-        <center><h1 class='title'>SUBMIT JOBS</h1>
+        <center><h1 class='title'>Application Form</h1>
         <br>
-        <p><b>Here You can submit jobs.<br>so you can desired have your candidate</b></p>
+        <p><b>Here You can submit Application.<br>and can also appoint meeting</b></p>
         
         </center>
          </section>  
