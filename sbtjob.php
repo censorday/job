@@ -134,23 +134,23 @@ table th {
 
     <select name="loc" id="" class="form1">
 <option value="">Location</option>
-<option value="">Delhi</option>
-<option value="">Noida</option>
-<option value="">Chennai</option>
-<option value="">Gurugram</option>
-<option value="">Chandigarh</option>
-<option value="">Mumbai</option>
-<option value="">Banglore</option>
+<option value="Delhi">Delhi</option>
+<option value="Noida">Noida</option>
+<option value="Chennai">Chennai</option>
+<option value="Gurugram">Gurugram</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Banglore">Banglore</option>
 </select>
  
 
        <select name="catg" id="" class="form1">
 <option value="">Category</option>
-<option value="">Full Time</option>
-<option value="">Part Time</option>
-<option value="">Freelance</option>
-<option value="">Internship</option>
-<option value="">Temporary</option>
+<option value="Full-Time">Full Time</option>
+<option value="Part-Time">Part Time</option>
+<option value="Freelance">Freelance</option>
+<option value="Internship">Internship</option>
+<option value="Temporary">Temporary</option>
 </select><br>
 <small><b>Discription: </b></small><br>
    <textarea  placeholder=" "
