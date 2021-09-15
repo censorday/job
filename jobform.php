@@ -74,6 +74,7 @@ table {
   border-spacing: 0 8px;
   padding: 0;
   width: 80%;
+  font-size: 16px;
   table-layout: fixed;
 }
 
