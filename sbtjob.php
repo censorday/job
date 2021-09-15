@@ -107,7 +107,7 @@ table th {
 
 <body>
 <section class='back'>
-<center><h1 class='title'>Submit Jobs</h1>
+<center><h1 class='title'>SUBMIT JOBS</h1>
 <br>
 <p><b>Here You can submit jobs.<br>so you can desired have your candidate</b></p>
 
@@ -127,7 +127,7 @@ table th {
      class="form1" type="text" name="pst" >
 
    <input placeholder="Est. Salary"
-     class="form1" type="int" name="sal" >
+     class="form1" type="number" name="sal" >
 
      <input class="form1" placeholder="Published on"  type="text" onfocus="(this.type='date')"   name="pblh" >
 
