@@ -118,7 +118,7 @@ table th {
 <section>
 <div class='box' >
 
-<form >
+<form action="upjob.php" method="post" >
     
 	<input	placeholder="Company Name"
      class="form1" type="text" name="cpname" >
