@@ -15,7 +15,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
                 . mysqli_connect_error());
         }
 
-      echo  $cid=$_GET['cid'];
+        $cid=$_GET['cid'];
         $cn=$_GET['cn'];
         $po=$_GET['po'];
         $sl=$_GET['sl'];
@@ -152,7 +152,7 @@ table th {
     </tr>
       <br> 
    <tr><td>  <?php echo "$cid"?> </td><td><?php echo "$cn"?>  </td><td><?php echo "$po"?>  </td><td><?php echo "$sl"?> 
-        "  </td><td> "<?php echo "$ct"?> ."  </td><td> <?php echo "$tp"?> </td><td><?php echo "$dt"?> </td></tr> 
+     </td><td> <?php echo "$ct"?>   </td><td> <?php echo "$tp"?> </td><td><?php echo "$dt"?> </td></tr> 
     </table><br>
           
           
