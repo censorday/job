@@ -109,7 +109,7 @@ table th {
 <section class='back'>
 <center><h1 class='title'>Submit Jobs</h1>
 <br>
-<p><b>Here You can submit jobs.<br>so you can desired candidate</b></p>
+<p><b>Here You can submit jobs.<br>so you can desired have your candidate</b></p>
 
 </center>
  </section>  
@@ -168,6 +168,7 @@ table th {
 
 <br>
 <h1>Previous Job</h1>
+<small><b>Recently submitted job will be shown below</b></small>
 <br>
 
   </center>
