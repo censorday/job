@@ -67,7 +67,7 @@ table td {
 }
 
 table th {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -120,29 +120,29 @@ table th {
 
 <form >
     
-	<input	placeholder="First Name"
-     class="form1" type="text" name="firstname" >
+	<input	placeholder="Company Name"
+     class="form1" type="text" name="cpname" >
 
-   <input placeholder="Last Name"
-     class="form1" type="text" name="lastname" >
+   <input placeholder="Post"
+     class="form1" type="text" name="pst" >
 
-   <input placeholder="Email"
-     class="form1" type="email" name="email" >
+   <input placeholder="Est. Salary"
+     class="form1" type="varchar" name="sal" >
 
-    <input placeholder="Address"
-    class="form1" type="address" name="address" >
+    <input placeholder="Location"
+    class="form1" type="varchar" name="loc" >
 
-  <input  placeholder="City"
-     class="form1" type="text" name="city" >
+  <input  placeholder="Category"
+     class="form1" type="text" name="catg" >
 
-   <input  placeholder="Phone"
-    class="form1" type="tel" name="phone" >
+   <input  placeholder="Published on"
+    class="form1" type="date" name="pblh" >
 <br>
    <small><b>CV/Resume: </b></small>
     <input class="form1" type="file" name="file" >
 		
     <br>
-		<input type="submit" class="btn1" value="Submit">
+		<input type="submit" class="apply" value="Submit">
   
 	</form>
 
