@@ -152,7 +152,7 @@ table th {
 <option value="">Internship</option>
 <option value="">Temporary</option>
 </select><br>
-<small><b>Discription: </b></small>
+<small><b>Discription: </b></small><br>
    <textarea  placeholder=" "
     class="form1"  name="dis" > </textarea>
 
