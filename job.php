@@ -137,7 +137,8 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["id"]. " </td><td> ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] ."  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> <button class='apply'>Apply Now</button></td></tr> ";
+        echo " <tr><td>  ". $row["id"]. " </td><td> ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
+        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> <button onClick="click(this.id)" class='apply'>Apply Now</button></td></tr> ";
     }
     echo "</table></div></center>";
 } 
@@ -152,4 +153,12 @@ $conn->close();
 ?>
 
 </body>
+
+
+<script type="text/javascript">
+  function click(clicked_id)
+  {
+      alert(clicked_id);
+  }
+</script>
 </html>
