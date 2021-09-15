@@ -138,7 +138,7 @@ if ($result->num_rows > 0) {
   // output data of each row
     while($row = $result->fetch_assoc()) {
         echo " <tr><td>  ". $row["id"]. " </td><td> ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
-        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> <button onClick='click(this.id)' class='apply'>Apply Now</button></td></tr> ";
+        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> <button id='$row["id"]' onClick='click(this.id)' class='apply'>Apply Now</button></td></tr> ";
     }
     echo "</table></div></center>";
 } 
