@@ -111,9 +111,11 @@ table th {
 <br>
 <p><b>Here You can submit jobs.<br>so you can desired candidate</b></p>
 
+</center>
+ </section>  
 
 
-
+<section>
 <div class='box' >
 
 <form >
@@ -145,15 +147,12 @@ table th {
 	</form>
 
 </div>
-
-
-</center>
+</section>
 
 
 
 
 
- </section>  
 
 <?php
 $servername = "sql6.freesqldatabase.com";
@@ -172,7 +171,7 @@ $sql = "SELECT id, company, post , salary , city , type, date FROM comp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<center><div class='box' ><table> <tr>
+    echo "<center><div ><table> <tr>
     <th>S-no.</th>
     <th>Company</th>
     <th>Post</th>
