@@ -295,11 +295,15 @@ display: var(--rec);
     padding: 2px 6px;
     font-size: 75%;
     color:black;
+   border:none;
     font-weight: 700;
     text-align: center;
     border-radius: 25px;
 }
-
+.orange:active{
+background: #157efb;
+color: white;
+      }
 .green{
     display: inline-block;
     background:green;
@@ -391,7 +395,7 @@ display: var(--rec);
 <body>
 
 <section class="back">
-<div class="sectop">
+<div class="sectop"><div  style="float: right;padding: 3%;"><a  href="/sbtjob.php" class="orange">Publish a job</a></div>
 <h2>Dream-Job</h2>
   <br>
   <img class="img" src="https://avstudy.herokuapp.com/anim.png"></img> 
