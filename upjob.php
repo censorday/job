@@ -16,7 +16,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
         }
 
 //variable  value
-
+         $id=  NULL;   
         $cmp =  $_REQUEST['cpname'];
         $pst = $_REQUEST['pst'];
         $sal =  $_REQUEST['sal'];
@@ -24,7 +24,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
         $cat = $_REQUEST['catg'];
         $pbl = $_REQUEST['pblh'];
 
- $sql = "INSERT INTO comp  VALUES ('$cmp','$pst','$sal','$loc','$cat','$pbl')";
+ $sql = "INSERT INTO comp  VALUES ('$id','$cmp','$pst','$sal','$loc','$cat','$pbl')";
 
  if(mysqli_query($conn, $sql)){
             echo "<h3>data stored in a database successfully." 
