@@ -129,8 +129,17 @@ table th {
    <input placeholder="Est. Salary"
      class="form1" type="varchar" name="sal" >
 
-    <input placeholder="Location"
-    class="form1" type="varchar" name="loc" >
+    <select name="loc" id="" class="form1">
+<option value="">Location</option>
+<option value="">Delhi</option>
+<option value="">Noida</option>
+<option value="">Chennai</option>
+<option value="">Gurugram</option>
+<option value="">Chandigarh</option>
+<option value="">Mumbai</option>
+<option value="">Banglore</option>
+</select>
+ 
 
        <select name="catg" id="" class="form1">
 <option value="">Category</option>
