@@ -135,11 +135,11 @@ table th {
   <input  placeholder="Category"
      class="form1" type="text" name="catg" >
 
-   <input  placeholder="Published on"
-    class="form1" type="date" name="pblh" >
+   <textarea  placeholder="Discription on"
+    class="form1"  name="dis" > </textarea>
 <br>
-   <small><b>CV/Resume: </b></small>
-    <input class="form1" type="file" name="file" >
+   <small><b>Published on: </b></small>
+    <input class="form1"  type="date" name="pblh" >
 		
     <br>
 		<input type="submit" class="apply" value="Submit">
