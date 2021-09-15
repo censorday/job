@@ -93,6 +93,16 @@ table th {
     color:white;
 
 }
+.form1{
+  margin:2% 2%;
+  display: inline-block;
+  height: 32px;
+  padding: 6px 16px;
+  width: 35%;
+  border: none;
+  background-color: #f3f3f3;
+  }
+
 </style>
 
 <body>
@@ -101,7 +111,48 @@ table th {
 <br>
 <p><b>Here You can submit jobs.<br>so you can desired candidate</b></p>
 
+
+
+
+<div class='box' >
+
+<form >
+    
+	<input	placeholder="First Name"
+     class="form1" type="text" name="firstname" >
+
+   <input placeholder="Last Name"
+     class="form1" type="text" name="lastname" >
+
+   <input placeholder="Email"
+     class="form1" type="email" name="email" >
+
+    <input placeholder="Address"
+    class="form1" type="address" name="address" >
+
+  <input  placeholder="City"
+     class="form1" type="text" name="city" >
+
+   <input  placeholder="Phone"
+    class="form1" type="tel" name="phone" >
+<br>
+   <small><b>CV/Resume: </b></small>
+    <input class="form1" type="file" name="file" >
+		
+    <br>
+		<input type="submit" class="btn1" value="Submit">
+  
+	</form>
+
+</div>
+
+
 </center>
+
+
+
+
+
  </section>  
 
 <?php
