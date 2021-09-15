@@ -7,19 +7,43 @@ $password = "r94vS6MuAu";
 $dbname = "sql6437316";
 
 // Create connection
-$connect = new mysqli($servername, $username, $password, $dbname);
-if (!$connect)
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-  {
+//check
+  if($conn === false){
+            die("ERROR: Could not connect. " 
+                . mysqli_connect_error());
+        }
 
-  die('Could not connect: ' . mysql_error());
+//variable  value
 
-  }
+        $cmp =  $_REQUEST['cpname'];
+        $pst = $_REQUEST['pst'];
+        $sal =  $_REQUEST['sal'];
+        $loc = $_REQUEST['loc'];
+        $cat = $_REQUEST['catg'];
+        $pbl = $_REQUEST['pblh'];
 
+ $sql = "INSERT INTO comp  VALUES ('$cmp','$pst','$sal','$loc','$cat','$pbl')";
 
-mysqli_query($connect,"INSERT INTO comp (company, post, salary, city , type ,  date)
-VALUES ('$_POST[cpname]', '$_POST[pst]', '$_POST[sal]','$_POST[loc]','$_POST[catg]',  '$_POST[pblh]')";
-?>
+ if(mysqli_query($conn, $sql)){
+            echo "<h3>data stored in a database successfully." 
+                . " Please browse your localhost php my admin" 
+                . " to view the updated data</h3>"; 
+ 
+   echo nl2br("\$cmp\n $pst\n "
+                . "$sal\n $loc\n $pbl");
+        }
+
+else{
+            echo "ERROR: Hush! Sorry $sql. " 
+                . mysqli_error($conn);
+        }
+          
+        // Close connection
+        mysqli_close($conn);
+        ?>
+
 <html>
 <body>
 
