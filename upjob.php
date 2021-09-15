@@ -1,5 +1,5 @@
 <?php
-
+header('Refresh: 2; URL=/sbtjob.php');
 
 $servername = "sql6.freesqldatabase.com";
 $username = "sql6437316";
@@ -31,7 +31,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
                 . " Please browse your localhost php my admin" 
                 . " to view the updated data</h3>"; 
  
-   echo nl2br("\$cmp\n $pst\n "
+   echo nl2br("\n $cmp\n $pst\n "
                 . "$sal\n $loc\n $pbl");
         }
 
@@ -44,14 +44,4 @@ else{
         mysqli_close($conn);
         ?>
 
-<html>
-<body>
 
-<center><h1>Update in progress .. .. ..</h1>
-<br>
-<p><b>please wait, it will automaticly redirect </b></p>
-
-</center>
-
-</body>
-  </html>
