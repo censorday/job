@@ -21,7 +21,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
         $ct=$_GET['ct'];
         $tp=$_GET['tp'];
         $dt=$_GET['dt'];
-
+?>
 
         <html>
         <style>
