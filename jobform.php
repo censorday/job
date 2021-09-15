@@ -15,6 +15,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
                 . mysqli_connect_error());
         }
 
-        $compid =  $_REQUEST['cid'];
-
-        echo "output:  $compid. " ;
+      echo  $cid=$_GET['cid'];
+        $cn=$_GET['cn'];
+        $po=$_GET['po'];
+        $ct=$_GET['ct'];
+        $tp=$_GET['tp'];
+        $dt=$_GET['dt'];
