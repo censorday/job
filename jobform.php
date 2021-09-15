@@ -139,7 +139,7 @@ table th {
         <p><b>Here You can submit Application.<br>and can also appoint meeting</b></p><br>   
   <hr style="width:50%">   
 <br>
-<h1>Company Details</h1>
+<h1>Selected Company Details</h1>
       
  <table> <tr>
     <th>Comp. ID</th>
