@@ -134,9 +134,10 @@ table th {
 
   <input  placeholder="Category"
      class="form1" type="text" name="catg" >
-
-   <textarea  placeholder="Discription on"
-    class="form1"  name="dis" > </textarea>
+     <br>
+   <textarea  value=""
+    class="form1"  </textarea>
+    <textarea placeholder="Discription "  name="dis" > </textarea>
 <br>
    <small><b>Published on: </b></small>
     <input class="form1"  type="date" name="pblh" >
