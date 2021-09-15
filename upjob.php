@@ -27,16 +27,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
  $sql = "INSERT INTO comp  VALUES ('$id','$cmp','$pst','$sal','$loc','$cat','$pbl')";
 
  if(mysqli_query($conn, $sql)){
-            echo "<h3>data stored in a database successfully." 
-                . " Please browse your localhost php my admin" 
-                . " to view the updated data</h3>"; 
+            echo "<center><h3>Job successfully UPDATED</h3><br><br><p>Now you are redirecting to previous page</p></center>"; 
  
-   echo nl2br("\n $cmp\n $pst\n "
-                . "$sal\n $loc\n $pbl");
+
         }
 
 else{
-            echo "ERROR: Hush! Sorry $sql. " 
+            echo "ERROR:  $sql. " 
                 . mysqli_error($conn);
         }
           
