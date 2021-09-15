@@ -31,7 +31,7 @@ overflow:hidden;
 
 padding:20px 10px;
 margin-top:-240px;
-margin-bottom:15px;
+margin-bottom:25px;
 background-color: white;
 box-shadow:5px 7px 12px black;
 border-radius: 1%;
@@ -48,7 +48,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 75%;
   table-layout: fixed;
 }
 
@@ -114,7 +114,7 @@ table th {
 </center>
  </section>  
 
-
+<center>
 <section>
 <div class='box' >
 
@@ -149,9 +149,11 @@ table th {
 </div>
 </section>
 
+<br>
+<h1>Previous Job</h1>
+<br>
 
-
-
+  </center>
 
 
 <?php
