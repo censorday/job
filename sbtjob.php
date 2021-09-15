@@ -152,8 +152,8 @@ table th {
 <option value="">Internship</option>
 <option value="">Temporary</option>
 </select>
-    
-   <textarea  rows="4" placeholder="Discription "
+<small><b>Discription: </b></small>
+   <textarea  placeholder=" "
     class="form1"  name="dis" > </textarea>
 
    
