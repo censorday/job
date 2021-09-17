@@ -239,11 +239,9 @@ display: var(--rec);
 
 .bigbar{
   background-color:black;
-  margin:2% 2%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow:5px 7px 12px #141F72;
-  
   display: inline-block;
 }
 
@@ -259,30 +257,15 @@ display: var(--rec);
 .bar{
  
   border-radius: 12px;
-  margin: 20px 0%;
   padding:0px 2%;
-  overflow: hidden;
-   display: inline-block;
-  background-color: white;
-  color:black;
-
-
-}
-
-.minibar{
-  width:160px;
-  height: 230px;
-  align-items: center;
-  border-radius: 12px;
-  margin: 20px 1%;
-  text-align: center;
-  cursor: pointer;
   overflow: hidden;
   display: inline-block;
   background-color: white;
   color:black;
 
+
 }
+
 
 .orange{
     display: inline-block;
