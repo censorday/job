@@ -75,21 +75,25 @@ color:black;
 overflow:hidden;
 }
 
+
 .card{
   width:150px;
   height: calc(11.7 * 150px / 9);
-  background-color: #2C7DFA;
+  background-color: white;
   border-radius: 12px;
   margin: 20px 5%;
   text-align: center;
+  border: solid 2px #444444;
   cursor: pointer;
   overflow: hidden;
+  color:black;
   box-shadow:5px 7px 12px #141F72;
   display: inline-block;
 }
 
 .card:hover{
-  background-color: #0f36a5;
+  background-color:black;
+  color:white;
   box-shadow:10px 18px 15px #753a88;
 }
 
@@ -424,7 +428,7 @@ color: white;
  <a href="/job.php"><input type="submit" value="Search a job" class="btn"></a>
   </form>
   
-<h5><i>( or search Jobs Made for you )<i></h5>
+<h5><i>( or Submit your Qualification to get Hired )<i></h5>
   
 <input onclick="window.location.href='/sbtcdd.php'" type="submit" value="Submit Qualification" class="btn2">
 </section>
