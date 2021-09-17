@@ -585,8 +585,16 @@ $conn->close();
     <input placeholder="Perm. Address"
     class="form1" type="address" name="address" >
 
-  <input  placeholder="City"
-     class="form1" type="text" name="city" >
+    <select name="loc" id="" class="form1">
+<option value="">Location</option>
+<option value="Delhi">Delhi</option>
+<option value="Noida">Noida</option>
+<option value="Chennai">Chennai</option>
+<option value="Gurugram">Gurugram</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Banglore">Banglore</option>
+</select>
 
    <input  placeholder="Phone"
     class="form1" type="tel" name="phone" >
