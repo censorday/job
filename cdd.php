@@ -155,18 +155,17 @@ table th {
 <form action="upemp.php" method="post">
     
     	<input	placeholder="First Name"
-     class="form1" type="text" name="firstname" >
+     class="form1" type="text" name="nm" >
 
    <input placeholder="Last Name"
-     class="form1" type="text" name="lastname" >
-  <input placeholder="Father's Name"
-     class="form1" type="text" name="fathername" >
+     class="form1" type="text" name="lnm" >
+  
 
    <input placeholder="Email"
-     class="form1" type="email" name="email" >
+     class="form1" type="email" name="eml" >
 
     <input placeholder="Perm. Address"
-    class="form1" type="address" name="address" >
+    class="form1" type="address" name="add" >
 
     <select name="loc" id="" class="form1">
 <option value="">Prefred Location</option>
@@ -181,7 +180,7 @@ table th {
 
 
    <input  placeholder="Phone"
-    class="form1" type="tel" name="phone" >
+    class="form1" type="tel" name="phn" >
 
   
 	
@@ -214,10 +213,10 @@ table th {
    <textarea  placeholder=" "
     class="form1"  name="dis" > </textarea>
 <br>
-<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Prefer Work From Home </b></small></input>
+<input type="checkbox"  name="wfh" value="YES">  <small><b>I Prefer Work From Home </b></small></input>
 <br><br>
    <small><b>CV/Resume: </b></small>
-    <input class="form1" type="file" name="file" >
+    <input class="form1" type="file" name="ecv" >
 		
    
 		
