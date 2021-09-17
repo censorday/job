@@ -546,8 +546,8 @@ $sql = "SELECT id, company, post , salary , city , type, date FROM comp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<center><div class='box' ><table> <tr>
-      <th class='bigbar' >Company</th>
+    echo "<center><div class='bigbar' ><table> <tr>
+      <th>Company</th>
     <th>Post</th>
     <th>Salary</th>
     <th>Location</th>
