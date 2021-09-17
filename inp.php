@@ -426,7 +426,7 @@ color: white;
   
 <h5><i>( or search Jobs Made for you )<i></h5>
   
-<input onclick="window.location.href='/candid.php'" type="submit" value="Submit Qualification" class="btn2">
+<input onclick="window.location.href='/cdd.php'" type="submit" value="Submit Qualification" class="btn2">
 </section>
 <br>
 <section><center>
