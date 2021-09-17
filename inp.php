@@ -487,11 +487,11 @@ color: white;
 <div>
 <center>
 <a href="#pplr"><div  class="card">  
-  <br><h2 >Popular Jobs</h2>
+  <br><h1 >Popular Jobs</h1>
   <br>
 </div></a>
 <a  href="#rec" onclick="rec();"><div class="card">  
-<br><h2  >Recent Jobs</h2>
+<br><h1  >Recent Jobs</h1>
   <br>  
 </div></a>
 </center>
