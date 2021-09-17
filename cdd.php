@@ -149,9 +149,10 @@ if ($result->num_rows > 0) {
         echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " " . $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
-         . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
+         . $row["wfh"] ."  </td><td> <button  class='apply'>Hire  Now</button> </td><td> 
 
-
+        
+         
 
         <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
         <button  class='apply'>Hire  Now</button></a>
