@@ -118,7 +118,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT eid, company, post , salary , city , type, date FROM emp";
+$sql = "SELECT eid, enm  , elnm , eemail , eadd , ecty , ephn , dob , qual , catg ,dis , wfh , ecv FROM emp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -131,17 +131,24 @@ if ($result->num_rows > 0) {
     <th>Phone</th>
     <th>D.O.B</th>
     <th>Qualification</th>
-   <th>Category</th>
-    <th>Additional</th>
-    <th>Apply</th>
+    <th>Category</th>
+    <th>Additional Qual.</th>
+    <th>W.F.H</th>
+    <th>CV/Resume</th>
+    <th>Hire</th>
   </tr>";  
   
   
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["id"]. " </td><td> ". $row["enm"]. " " . $row["enlm"]."  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
-        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> 
+        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " " . $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
+         .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
+         . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
+         . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
+
+
+
         <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
         <button  class='apply'>Hire  Now</button></a>
       
