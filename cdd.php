@@ -36,7 +36,7 @@ margin-bottom:15px;
 background-color: white;
 box-shadow:5px 7px 12px black;
 border-radius: 1%;
-max-width:85%;
+max-width:95%;
 min-height:450px;
 text-align:center;
 color:black;
@@ -58,6 +58,7 @@ table {
 table tr {
   background-color: #f8f8f8;
   border: 5px solid white;
+  height: 0;
 
 }
 
@@ -142,7 +143,7 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " " . $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
+        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"+"elnm"]. " </td><td>  " . $row["eemail"] . " </td><td>  "
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
          . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
