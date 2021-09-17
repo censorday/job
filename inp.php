@@ -238,19 +238,18 @@ display: var(--rec);
 
 .rec table {
 
-
   border: 1px solid #ccc;
   color:black;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 95%;
   table-layout: fixed;
 }
 
 .rec table tr {
-  background-color: #f8f8f8;
-  border: 5px solid white;
+  background-color: white;
+  border: 5px solid #e8e8e8;
 
 }
 
