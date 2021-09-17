@@ -239,10 +239,8 @@ display: var(--rec);
 
 .bigbar{
   background-color:black;
-  border-radius: 12px;
-  overflow: hidden;
   box-shadow:5px 7px 12px #141F72;
-  display: inline-block;
+
 }
 
 .bigbar:hover{
@@ -257,9 +255,8 @@ display: var(--rec);
 .bar{
  
   border-radius: 12px;
-  padding:0px 2%;
+  padding:2% 1%;
   overflow: hidden;
-  display: inline-block;
   background-color: white;
   color:black;
 
