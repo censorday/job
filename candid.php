@@ -144,12 +144,14 @@ table th {
 <br>
 <h1>Submit Your Details</h1>
       
-
-
 <center>
+</section>
+
+
 <section>
+
 <div class='box' >
-    
+
 <form action="upemp.php" method="post">
     
     	<input	placeholder="First Name"
