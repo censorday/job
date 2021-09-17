@@ -432,15 +432,21 @@ color: white;
 <br>
 <section><center>
 <div class="card">  
+  <h2>Get</h2><br>
+  <h1>Jobs</h1><br><br>
   <p class="orange">Full-Time</p>
   <br>
 </div>
 <div class="card">  
-  <P class="green">Work From Home</P>
+<h2>Get</h2><br>
+  <h1>Jobs</h1><br><br>  
+<P class="green">Work From Home</P>
   <br>
 </div>
 <div class="card">  
-  <P class="red">Part-Time</P>
+<h2>Get</h2><br>
+  <h1>Jobs</h1><br><br> 
+<P class="red">Part-Time</P>
   <br>
 </div></center>
 </section>
@@ -482,11 +488,11 @@ color: white;
 <div>
 <center>
 <a href="#pplr"><div  class="card">  
-  <h3 >Popular Jobs</h3>
+  <br><h2 >Popular Jobs</h2>
   <br>
 </div></a>
 <a  href="#rec" onclick="rec();"><div class="card">  
-  <h3  >Recent Jobs</h3>
+<br><h2  >Recent Jobs</h2>
   <br>  
 </div></a>
 </center>
