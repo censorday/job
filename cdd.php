@@ -49,6 +49,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
+  font-size: 10px;
   width: 100%;
   table-layout: fixed;
 }
@@ -58,7 +59,7 @@ table {
 table tr {
   background-color: #f8f8f8;
   border: 5px solid white;
-  height: 0;
+  width: 0;
 
 }
 
@@ -69,7 +70,7 @@ table td {
 }
 
 table th {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -143,7 +144,7 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " </td><td>  " . $row["eemail"] . " </td><td>  "
+        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " " . $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
          . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
