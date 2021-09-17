@@ -152,7 +152,7 @@ table th {
 
 <div class='box' >
 
-<form action="upemp.php" method="post">
+<form action="upcdd.php" method="post">
     
     	<input	placeholder="First Name"
      class="form1" type="text" name="nm" >
