@@ -171,30 +171,27 @@ table th {
 <section>
 <div class='box' >
 
-<form action="upjob.php" method="post" >
-    	<input	placeholder="First Name"
-     class="form1" type="text" name="firstname" >
+<form action="meetsec.php" method="post" >
+    	<input	placeholder="Interviwer Name"
+     class="form1" type="text" name="interviwer" >
 
-   <input placeholder="Last Name"
-     class="form1" type="text" name="lastname" >
-  <input placeholder="Father's Name"
-     class="form1" type="text" name="fathername" >
+     <input class="form1" placeholder="Date-of-Meeting"  type="text" onfocus="(this.type='date')"   name="dob" >
+
+     <input class="form1" placeholder="Time-of-Meeting"  type="text" onfocus="(this.type='time')"   name="dob" >
 
    <input placeholder="Email"
      class="form1" type="email" name="email" >
+     <br><br>
+<small><b>Additional Remarks: </b></small><br>
+   <textarea  placeholder=" "
+    class="form1"  name="dis" > </textarea>
+<br>
+<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Confirm for the meeting </b></small></input>
+<br><br>
 
-    <input placeholder="Perm. Address"
-    class="form1" type="address" name="address" >
-
-  <input  placeholder="City"
-     class="form1" type="text" name="city" >
-
-   <input  placeholder="Phone"
-    class="form1" type="tel" name="phone" >
-
-  		
+     		
     <br>
-		<input type="submit" class="apply" value="Submit">
+		<input type="submit" class="apply" value="Schedule">
   
 	</form>
 
