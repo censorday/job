@@ -98,9 +98,9 @@ table th {
 
 <body>
 <section class='back'>
-<center><h1 class='title'>All Jobs</h1>
+<center><h1 class='title'>All Candidates</h1>
 <br>
-<p><b>Here You can choose your desired jobs.<br>also you can submit your CV/Resume,then you can further proceed for interview </b></p>
+<p><b>Here You can choose your desired Candidate.<br>also you can you can further proceed for interview </b></p>
 
 </center>
  </section>  
