@@ -40,7 +40,7 @@ font-family: 'Karla', sans-serif;
 .back{
 background-color: #2a2a72;
 background-image: linear-gradient(115deg, #2a2a72 0%, #009ffd 74%);
-height:650px;
+height:450px;
 color:white;
 overflow:hidden;
 }
