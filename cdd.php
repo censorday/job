@@ -118,7 +118,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT eid, enm  , elnm , eemail , eadd , ecty , ephn , dob , qual , catg ,dis , wfh , ecv FROM emp";
+$sql = "SELECT eid,enm,elnm,eemail,eadd,ecty,ephn,dob,qual,catg,dis,wfh,ecv FROM emp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -146,13 +146,7 @@ if ($result->num_rows > 0) {
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
          . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
-
-
-
-        <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
-        <button  class='apply'>Hire  Now</button></a>
-      
-        </td></tr> ";
+        <button  class='apply'>Hire  Now</button> </td></tr> ";
     }
     echo "</table></div></center>";
 } 
