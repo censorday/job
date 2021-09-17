@@ -68,6 +68,7 @@ table td {
   padding: 10px;
   text-align: center;
   width: auto;
+  overflow:hidden;
 }
 
 table th {
