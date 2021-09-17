@@ -186,7 +186,7 @@ table th {
    <textarea  placeholder=" "
     class="form1"  name="dis" > </textarea>
 <br>
-<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Confirm for the meeting </b></small></input>
+<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Confirm the candidate for the meeting </b></small></input>
 <br><br>
 
      		
