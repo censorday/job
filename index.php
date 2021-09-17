@@ -497,7 +497,7 @@ color: white;
 </center>
 </div>
   
-  <section  id="rec" class="rec"><h1><b>Recent Jobs</b></h1> 
+  <section  class="rec"><h1><b>Recent Jobs</b></h1> 
   
   
   
@@ -521,7 +521,7 @@ $sql = "SELECT id, company, post , salary , city , type, date FROM comp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<center><div ><table> <tr >
+    echo "<center><div id='rec'  ><table> <tr >
       <th>Company</th>
     <th>Post</th>
     <th>Salary</th>
