@@ -49,7 +49,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 14px;
   width: 100%;
   table-layout: fixed;
 }
