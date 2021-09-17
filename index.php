@@ -79,7 +79,6 @@ overflow:hidden;
   width:150px;
   height: calc(11.7 * 150px / 9);
   background-color: #2C7DFA;
-  align-items: center;
   border-radius: 12px;
   margin: 20px 5%;
   text-align: center;
@@ -236,57 +235,40 @@ display: var(--rec);
 
 
 
+.rec table {
 
-.bigbar{
-  background-color:black;
-  margin:2% 2%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow:5px 7px 12px #141F72;
-  
-  display: inline-block;
+  border: 1px solid #ccc;
+  color:black;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  table-layout: fixed;
 }
 
-.bigbar:hover{
-  box-shadow:10px 18px 15px #753a88;
-    transform: scale(1.02);
+.rec table tr {
+  background-color: white;
+  border: 15px solid #e8e8e8;
+
+}
+
+.rec table tr:hover {
+  box-shadow:7px 10px 8px #753a88;
+    transform: scale(1.01);
   transition: all 0.2s ease-in-out;
-}
-
-
-
-
-.bar{
- 
-   max-width:65%;
-   height: 230px;
-  border-radius: 12px;
-  text-align: left;
-  line-height: 100%;
-  margin: 20px 0%;
-   
- padding:0px 2%;
-  overflow: hidden;
-   display: inline-block;
-  background-color: white;
-  color:black;
-
 
 }
 
-.minibar{
-  width:160px;
-  height: 230px;
-  align-items: center;
-  border-radius: 12px;
-  margin: 20px 1%;
+.rec table th,
+.rec table td {
+  padding: 10px;
   text-align: center;
-  cursor: pointer;
-  overflow: hidden;
-  display: inline-block;
-  background-color: white;
-  color:black;
+}
 
+.rec table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .orange{
@@ -449,15 +431,21 @@ color: white;
 <br>
 <section><center>
 <div class="card">  
+  <h2>Get</h2>
+  <h1>Jobs</h1><br>
   <p class="orange">Full-Time</p>
   <br>
 </div>
 <div class="card">  
-  <P class="green">Work From Home</P>
+<h2>Get</h2>
+  <h1>Jobs</h1><br>
+<P class="green">Work From Home</P>
   <br>
 </div>
 <div class="card">  
-  <P class="red">Part-Time</P>
+<h2>Get</h2>
+  <h1>Jobs</h1><br>
+<P class="red">Part-Time</P>
   <br>
 </div></center>
 </section>
@@ -499,11 +487,11 @@ color: white;
 <div>
 <center>
 <a href="#pplr"><div  class="card">  
-  <h3 >Popular Jobs</h3>
+  <br><h1 >Popular Jobs</h1>
   <br>
 </div></a>
 <a  href="#rec" onclick="rec();"><div class="card">  
-  <h3  >Recent Jobs</h3>
+<br><h1  >Recent Jobs</h1>
   <br>  
 </div></a>
 </center>
@@ -511,75 +499,61 @@ color: white;
   
   <section  id="rec" class="rec"><h1><b>Recent Jobs</b></h1> 
   
-   <div class="bigbar">  <div class="bar"> 
-      <center><h3>Facebook</h3> </center>
-      <p>We require a person to manage facebook server and have proper web development  knowledge</p><br>
-    <p>   <b>Qualification :</b>M.Sc/B.Tech</p>
-     <p>  <b>Salary :</b>₹50000 - ₹55000</p>
-     <p>  <b>Location :</b>New Delhi</p>
-     </div>
-    
-    <div class="minibar">
-      <h3>Frontend Development</h3> 
-      <p class="orange">Partime</p>
-      <p ><button class="btn1">Apply Job</button></p>
-      <br>
-      </div>
-  </div>  
+  
+  
     
     
     
-     <div class="bigbar">  <div class="bar"> 
-      <center><h3>Wipro</h3> </center>
-      <p>We require a person to manage facebook server and have proper web development  knowledge</p><br>
-    <p>   <b>Qualification :</b>B.Tech/MBA</p>
-     <p>  <b>Salary :</b>₹70000 - ₹85000</p>
-     <p>  <b>Location :</b>Chennai</p>
-     </div>
-    
-    <div class="minibar">
-      <h3>Frontend Development</h3> 
-      <p class="green">Work From Home</p>
-      <p ><button class="btn1">Apply Job</button></p>
-      <br>
-      </div>
-  </div>
-    
-    
-    
-     <div class="bigbar">  <div class="bar"> 
-      <center><h3>Google</h3> </center>
-      <p>We require a person to manage facebook server and have proper web development  knowledge</p><br>
-    <p>   <b>Qualification :</b>B.Tech</p>
-     <p>  <b>Salary :</b>₹90000 - ₹100000</p>
-     <p>  <b>Location :</b>Gurugram</p>
-     </div>
-    
-    <div class="minibar">
-      <h3>Frontend Development</h3> 
-      <p class="blue">Full Time</p>
-      <p ><button class="btn1">Apply Job</button></p>
-      <br>
-      </div>
-  </div>
-    
-    
-    
-     <div class="bigbar">  <div class="bar"> 
-      <center><h3>Uber</h3> </center>
-      <p>We require a person to manage facebook server and have proper web development  knowledge</p><br>
-    <p>   <b>Qualification :</b>Intermidiate</p>
-     <p>  <b>Salary :</b>₹45000 - ₹50000</p>
-     <p>  <b>Location :</b>New Delhi</p>
-     </div>
-    
-    <div class="minibar">
-      <h3>Frontend Development</h3> 
-      <p class="red">Freelance</p>
-      <p ><button class="btn1">Apply Job</button></p>
-      <br>
-      </div>
-  </div>
+<?php
+$servername = "sql6.freesqldatabase.com";
+$username = "sql6437316";
+$password = "r94vS6MuAu";
+$dbname = "sql6437316";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT id, company, post , salary , city , type, date FROM comp";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<center><div ><table> <tr >
+      <th>Company</th>
+    <th>Post</th>
+    <th>Salary</th>
+    <th>Location</th>
+    <th>Category</th>
+    <th>Published on</th>
+    <th>Apply</th>
+  </tr>";  
+  
+  
+  
+  // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo " <tr ><td>  ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
+        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> 
+        <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
+        <button  class='btn1'>Apply Now</button></a>
+      
+        </td></tr> ";
+    }
+    echo "</table></div></center>";
+} 
+
+
+
+else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
+
     
     
     
