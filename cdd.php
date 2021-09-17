@@ -104,7 +104,7 @@ table th {
 <section class='back'>
 <center><h1 class='title'>All Candidates</h1>
 <br>
-<p><b>Submit your Qualification to get Hired<br>also you can further proceed for interview </b></p>
+<p><b>This are TOP candidates you are looking for<br>also you can further proceed for interview </b></p>
 
 </center>
  </section>  
