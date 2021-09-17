@@ -98,9 +98,9 @@ table th {
 
 <body>
 <section class='back'>
-<center><h1 class='title'>All Candidates</h1>
+<center><h1 class='title'>All Jobs</h1>
 <br>
-<p><b>Here You can choose your desired Candidate.<br>also you can you can further proceed for interview </b></p>
+<p><b>Here You can choose your desired jobs.<br>also you can submit your CV/Resume,then you can further proceed for interview </b></p>
 
 </center>
  </section>  
@@ -142,11 +142,17 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " " . $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
+        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]  $row["elnm"]."  </td><td>  " . $row["eemail"] . " </td><td>  "
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
          . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
-        <button  class='apply'>Hire  Now</button> </td></tr> ";
+
+
+
+        <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
+        <button  class='apply'>Hire  Now</button></a>
+      
+        </td></tr> ";
     }
     echo "</table></div></center>";
 } 
