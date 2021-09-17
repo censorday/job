@@ -1,5 +1,5 @@
 <?php
-header('Refresh: 2; URL=/sbtjob.php');
+header('Refresh: 1; URL=/sbtjob.php');
 
 $servername = "sql6.freesqldatabase.com";
 $username = "sql6437316";

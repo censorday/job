@@ -1,5 +1,5 @@
 <?php
-
+header('Refresh: 1; URL=/cdd.php');
 $servername = "sql6.freesqldatabase.com";
 $username = "sql6437316";
 $password = "r94vS6MuAu";
