@@ -171,6 +171,12 @@ else {
 $conn->close();
 ?>
 
+
+<br>
+<h1>Dream Job</h1>
+<small><b>Developed By Aman Vashishth</b></small>
+<br><br>
+
 </body>
 
 

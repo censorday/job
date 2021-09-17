@@ -192,44 +192,7 @@ table th {
    <input  placeholder="Phone"
     class="form1" type="tel" name="phone" >
 
-  
-	
-
-
-     <input class="form1" placeholder="Date-of-Birth"  type="text" onfocus="(this.type='date')"   name="dob" >
-
-
-    <select name="qul" id="" class="form1">
-<option value="">Primary Qualification</option>
-<option value="B.tech">B.Tech</option>
-<option value="M.Tech">M.Tech</option>
-<option value="B.Sc">B.Sc</option>
-<option value="M.Sc">M.Sc</option>
-<option value="M.Ba">M.Ba</option>
-<option value="12th">12th only</option>
-<option value="10th">10th only</option>
-</select>
- 
-
-       <select name="catg" id="" class="form1">
-<option value="">Job Prefrence</option>
-<option value="Full-Time">Full Time</option>
-<option value="Part-Time">Part Time</option>
-<option value="Freelance">Freelance</option>
-<option value="Internship">Internship</option>
-<option value="Temporary">Temporary</option>
-</select><br><br>
-<small><b>Additional Qualification/Achivements: </b></small><br>
-   <textarea  placeholder=" "
-    class="form1"  name="dis" > </textarea>
-<br>
-<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Prefer Work From Home </b></small></input>
-<br><br>
-   <small><b>CV/Resume: </b></small>
-    <input class="form1" type="file" name="file" >
-		
-   
-		
+  		
     <br>
 		<input type="submit" class="apply" value="Submit">
   
@@ -239,9 +202,10 @@ table th {
 </section>
 
 <br>
-<h1>Previous Job</h1>
-<small><b>Recently submitted job will be shown below</b></small>
+<h1>Dream Job</h1>
+<small><b>Developed By Aman Vashishth</b></small>
 <br><br>
+
 
   </center>
 
