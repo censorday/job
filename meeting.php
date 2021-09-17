@@ -138,9 +138,9 @@ table th {
 
  <body>
         <section class='back'>
-        <center><h1 class='title'>Application Form</h1>
+        <center><h1 class='title'>Meeting</h1>
         <br>
-        <p><b>Here You can submit Application.<br>and can also appoint meeting</b></p><br>   
+        <p><b>You can Schedule a meeting.<br>or an interview for following Candidate.</b></p><br>   
   <hr style="width:50%">   
 <br>
 <h1>Selected Company Details</h1>
