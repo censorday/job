@@ -348,7 +348,7 @@ color: white;
   z-index: 999;
 }
 .popup {
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px;
   text-align:left;
   background: #fff;
