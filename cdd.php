@@ -143,7 +143,7 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"+"elnm"]. " </td><td>  " . $row["eemail"] . " </td><td>  "
+        echo " <tr><td>  ". $row["eid"]. " </td><td> ". $row["enm"]. " </td><td>  " . $row["eemail"] . " </td><td>  "
          .  $row["eadd"] . "  </td><td> " . $row["ecty"] ."   </td><td> " . $row["ephn"] ."  </td><td> " . $row["dob"] ." </td><td>  "
          . $row["qual"] ."   </td><td> " . $row["catg"] ."  </td><td> " . $row["dis"] ."  </td><td> " 
          . $row["wfh"] ."  </td><td> " . $row["ecv"] ."</td><td> 
