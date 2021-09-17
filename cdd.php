@@ -59,7 +59,7 @@ table {
 table tr {
   background-color: #f8f8f8;
   border: 5px solid white;
-  width: 0;
+  
 
 }
 
@@ -67,6 +67,7 @@ table th,
 table td {
   padding: 10px;
   text-align: center;
+  width: 0;
 }
 
 table th {
