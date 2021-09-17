@@ -433,19 +433,19 @@ color: white;
 <section><center>
 <div class="card">  
   <h2>Get</h2><br>
-  <h1>Jobs</h1><br><br>
+  <h1>Jobs</h1><br>
   <p class="orange">Full-Time</p>
   <br>
 </div>
 <div class="card">  
 <h2>Get</h2><br>
-  <h1>Jobs</h1><br><br>  
+  <h1>Jobs</h1><br>
 <P class="green">Work From Home</P>
   <br>
 </div>
 <div class="card">  
 <h2>Get</h2><br>
-  <h1>Jobs</h1><br><br> 
+  <h1>Jobs</h1><br>
 <P class="red">Part-Time</P>
   <br>
 </div></center>
