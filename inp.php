@@ -254,7 +254,7 @@ display: var(--rec);
 }
 
 .rec table tr:hover {
-  box-shadow:10px 18px 15px #753a88;
+  box-shadow:7px 10px 8px #753a88;
     transform: scale(1.01);
   transition: all 0.2s ease-in-out;
 
