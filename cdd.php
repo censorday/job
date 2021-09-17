@@ -138,7 +138,7 @@ if ($result->num_rows > 0) {
     <th>Category</th>
     <th>Additional Qual.</th>
     <th>W.F.H</th>
-    <th>CV/Resume</th>
+    <th>CV</th>
     <th>Hire</th>
   </tr>";  
   
