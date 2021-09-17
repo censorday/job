@@ -569,18 +569,20 @@ $conn->close();
 		<b>Please fill following form:</b>
 		<a class="close" href="#">&times;</a><center>
     <div >
-  <form >
+  <form action="upemp.php" method="post">
     
-	<input	placeholder="First Name"
+  <input	placeholder="First Name"
      class="form1" type="text" name="firstname" >
 
    <input placeholder="Last Name"
      class="form1" type="text" name="lastname" >
+  <input placeholder="Father's Name"
+     class="form1" type="text" name="fathername" >
 
    <input placeholder="Email"
      class="form1" type="email" name="email" >
 
-    <input placeholder="Address"
+    <input placeholder="Perm. Address"
     class="form1" type="address" name="address" >
 
   <input  placeholder="City"
@@ -588,14 +590,49 @@ $conn->close();
 
    <input  placeholder="Phone"
     class="form1" type="tel" name="phone" >
+
+  
+	
+
+
+     <input class="form1" placeholder="Date-of-Birth"  type="text" onfocus="(this.type='date')"   name="dob" >
+
+
+    <select name="qul" id="" class="form1">
+<option value="">Primary Qualification</option>
+<option value="B.tech">B.Tech</option>
+<option value="M.Tech">M.Tech</option>
+<option value="B.Sc">B.Sc</option>
+<option value="M.Sc">M.Sc</option>
+<option value="M.Ba">M.Ba</option>
+<option value="12th">12th only</option>
+<option value="10th">10th only</option>
+</select>
+ 
+
+       <select name="catg" id="" class="form1">
+<option value="">Job Prefrence</option>
+<option value="Full-Time">Full Time</option>
+<option value="Part-Time">Part Time</option>
+<option value="Freelance">Freelance</option>
+<option value="Internship">Internship</option>
+<option value="Temporary">Temporary</option>
+</select><br><br>
+<small><b>Additional Qualification/Achivements: </b></small><br>
+   <textarea  placeholder=" "
+    class="form1"  name="dis" > </textarea>
 <br>
+<input type="checkbox"  name="wfh" value="wfh">  <small><b>I Prefer Work From Home </b></small></input>
+<br><br>
    <small><b>CV/Resume: </b></small>
     <input class="form1" type="file" name="file" >
 		
+   
+		
     <br>
-		<input type="submit" class="btn1" value="Submit">
+		<input type="submit" class="apply" value="Submit">
   
-	</form>
+		</form>
 </div>
    
     <br><br>
