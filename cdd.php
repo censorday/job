@@ -154,8 +154,8 @@ if ($result->num_rows > 0) {
         
          
 
-        <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
-        <button  class='apply'>Hire  Now</button></a>
+        <a href='meeting.php?cid=$row[eid]&cn=$row[enm]&po=$row[eemail]&sl=$row[ecty]&ct=$row[ephn]&tp=$row[qual]&dt=$row[wfh] '>
+        <button  class='apply'>Hire Now</button></a>
       
         </td></tr> ";
     }
