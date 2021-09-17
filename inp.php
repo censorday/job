@@ -252,7 +252,7 @@ color:black;
 border-collapse: collapse;
 margin: 0;
 padding: 0;
-width: 100%;
+width: 85%;
 table-layout: fixed;
 }
 
@@ -521,7 +521,7 @@ $sql = "SELECT id, company, post , salary , city , type, date FROM comp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<center><div class='bigbar' ><table> <tr>
+    echo "<center><div class='bigbar' ><table> <tr class='bar'>
       <th>Company</th>
     <th>Post</th>
     <th>Salary</th>
@@ -535,7 +535,7 @@ if ($result->num_rows > 0) {
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " <tr class='bar'><td>  ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
+        echo " <tr ><td>  ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
         "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> 
         <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
         <button  class='btn1'>Apply Now</button></a>
