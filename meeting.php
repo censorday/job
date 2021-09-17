@@ -145,14 +145,14 @@ table th {
 <h1>Selected Company Details</h1>
       
  <table> <tr>
-    <th>Comp. ID</th>
-    <th>Company</th>
-    <th>Post</th>
-    <th>Salary</th>
-    <th>Location</th>
-    <th>Category</th>
-    <th>Published on</th>
-    </tr>
+ <th>Cand. ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Pref. City</th>
+    <th>Phone</th>
+    <th>Qualification</th>
+    <th>W.F.H</th>
+     </tr>
       <br> 
    <tr><td>  <?php echo "$cid"?> </td><td><?php echo "$cn"?>  </td><td><?php echo "$po"?>  </td><td><?php echo "$sl"?> 
      </td><td> <?php echo "$ct"?>   </td><td> <?php echo "$tp"?> </td><td><?php echo "$dt"?> </td></tr> 

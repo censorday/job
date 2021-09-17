@@ -154,7 +154,7 @@ if ($result->num_rows > 0) {
         
          
 
-        <a href='meeting.php?cid=$row[eid]&cn=$row[enm]&po=$row[eemail]&sl=$row[ecty]&ct=$row[ephn]&tp=$row[qual]&dt=$row[wfh] '>
+        <a href='meeting.php?cid=$row[eid]&cn=$row[enm]&po=$row[eemail]&sl=$row[ecty]&ct=$row[ephn]&tp=$row[qual]&ctg=$row[catg]&dt=$row[wfh] '>
         <button  class='apply'>Hire Now</button></a>
       
         </td></tr> ";
