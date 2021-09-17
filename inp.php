@@ -85,6 +85,7 @@ overflow:hidden;
   border: solid 2px #444444;
   cursor: pointer;
   overflow: hidden;
+  color:black;
   box-shadow:5px 7px 12px #141F72;
   display: inline-block;
 }
