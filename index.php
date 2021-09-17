@@ -393,7 +393,7 @@ color: white;
 <div >  
   <a href="#rec" onclick="rec();" > <input  type="button" value="Find a Job" class="btn1"></a>
   
-   <input type="button" value="Find a Candidate" class="btn1">
+   <input type="button" onclick="window.location.href='/cdd.php'" value="Find a Candidate" class="btn1">
 
   </div>
  <br>
