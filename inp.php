@@ -239,6 +239,7 @@ display: var(--rec);
 
 .bigbar{
   background-color:black;
+  width:85%;
   box-shadow:5px 7px 12px #141F72;
 
 }
