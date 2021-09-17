@@ -189,7 +189,7 @@ table th {
      <input class="form1" placeholder="Date-of-Birth"  type="text" onfocus="(this.type='date')"   name="dob" >
 
 
-    <select name="qul" id="" class="form1">
+    <select name="qual" id="" class="form1">
 <option value="">Primary Qualification</option>
 <option value="B.tech">B.Tech</option>
 <option value="M.Tech">M.Tech</option>
