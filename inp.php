@@ -566,7 +566,6 @@ $conn->close();
   
    <div id="pop" class="overlay">
 	<div class="popup">
-		<b>Please fill following form:</b>
 		<a class="close" href="#">&times;</a><center>
     <div >
   <form action="upemp.php" method="post">
@@ -586,7 +585,7 @@ $conn->close();
     class="form1" type="address" name="address" >
 
     <select name="loc" id="" class="form1">
-<option value="">Location</option>
+<option value="">Prefred Location</option>
 <option value="Delhi">Delhi</option>
 <option value="Noida">Noida</option>
 <option value="Chennai">Chennai</option>
@@ -635,7 +634,7 @@ $conn->close();
    
 		
     <br>
-		<input type="submit" class="apply" value="Submit">
+		<input type="submit" class="btn1" value="Submit">
   
 		</form>
 </div>
