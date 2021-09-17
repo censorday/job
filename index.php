@@ -348,7 +348,7 @@ color: white;
   z-index: 999;
 }
 .popup {
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px;
   text-align:left;
   background: #fff;
@@ -426,7 +426,7 @@ color: white;
   
 <h5><i>( or search Jobs Made for you )<i></h5>
   
-<input onclick="window.location.href='#pop'" type="submit" value="Submit Qualification" class="btn2">
+<input onclick="window.location.href='/cdd.php'" type="submit" value="Submit Qualification" class="btn2">
 </section>
 <br>
 <section><center>
@@ -563,43 +563,7 @@ $conn->close();
 
   
   
-  
-   <div id="pop" class="overlay">
-	<div class="popup">
-		<b>Please fill following form:</b>
-		<a class="close" href="#">&times;</a><center>
-    <div >
-  <form >
-    
-	<input	placeholder="First Name"
-     class="form1" type="text" name="firstname" >
 
-   <input placeholder="Last Name"
-     class="form1" type="text" name="lastname" >
-
-   <input placeholder="Email"
-     class="form1" type="email" name="email" >
-
-    <input placeholder="Address"
-    class="form1" type="address" name="address" >
-
-  <input  placeholder="City"
-     class="form1" type="text" name="city" >
-
-   <input  placeholder="Phone"
-    class="form1" type="tel" name="phone" >
-<br>
-   <small><b>CV/Resume: </b></small>
-    <input class="form1" type="file" name="file" >
-		
-    <br>
-		<input type="submit" class="btn1" value="Submit">
-  
-	</form>
-</div>
-   
-    <br><br>
-    <center></div></div>
 		
 	</body>	
 		<script>
