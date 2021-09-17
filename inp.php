@@ -236,45 +236,34 @@ display: var(--rec);
 
 
 
-
-.bigbar{
-  background-color:black;
-  width:85%;
-  box-shadow:5px 7px 12px #141F72;
-
-}
+.rec table {
 
 
-
-
-.bigbar:hover{
-  box-shadow:10px 18px 15px #753a88;
-    transform: scale(1.02);
-  transition: all 0.2s ease-in-out;
-}
-
-
-
-
-.bar{
- 
-  border-radius: 12px;
-  padding:2% 1%;
-  overflow: hidden;
-  background-color: white;
+  border: 1px solid #ccc;
   color:black;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
 
+.rec table tr {
+  background-color: #f8f8f8;
+  border: 5px solid white;
 
 }
-.bar table {
 
-border: 1px solid #ccc;
-color:black;
-border-collapse: collapse;
-margin: 0;
-padding: 0;
-width: 85%;
-table-layout: fixed;
+.rec table th,
+.rec table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.rec table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .orange{
@@ -521,7 +510,7 @@ $sql = "SELECT id, company, post , salary , city , type, date FROM comp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<center><div class='bigbar' ><table> <tr class='bar'>
+    echo "<center><div ><table> <tr >
       <th>Company</th>
     <th>Post</th>
     <th>Salary</th>
