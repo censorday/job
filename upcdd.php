@@ -16,14 +16,20 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 //variable  value
          $id=  NULL;   
-        $cmp =  $_REQUEST['cpname'];
-        $pst = $_REQUEST['pst'];
-        $sal =  $_REQUEST['sal'];
+        $nm =  $_REQUEST['nm'];
+        $lnm = $_REQUEST['lnm'];
+        $eml =  $_REQUEST['eml'];
+        $add = $_REQUEST['add'];
         $loc = $_REQUEST['loc'];
-        $cat = $_REQUEST['catg'];
-        $pbl = $_REQUEST['pblh'];
+        $phn = $_REQUEST['phn'];
+        $dob =  $_REQUEST['dob'];
+        $qual = $_REQUEST['qual'];
+        $catg =  $_REQUEST['catg'];
+        $dis = $_REQUEST['dis'];
+        $wfh = $_REQUEST['wfh'];
+        $ecv = $_REQUEST['ecv'];
 
- $sql = "INSERT INTO emp  VALUES ('$id','$cmp','$pst','$sal','$loc','$cat','$pbl')";
+ $sql = "INSERT INTO emp  VALUES ('$id','$nm','$lnm','$eml','$add','$loc','$phn','$dob','$qual','$catg','$dis','$wfh','$ecv')";
 
  if(mysqli_query($conn, $sql)){
             echo "<center><br><br><br><h3>Yor Job successfully PUBLISHED</h3><br><br><p>Now you are redirecting to previous page</p></center>"; 
