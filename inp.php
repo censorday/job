@@ -249,7 +249,7 @@ display: var(--rec);
 
 .rec table tr {
   background-color: white;
-  border: 5px solid #e8e8e8;
+  border: 15px solid #e8e8e8;
 
 }
 
