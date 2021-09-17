@@ -118,7 +118,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT eid,enm,elnm,eemail,eadd,ecty,ephn,dob,qual,catg,dis,wfh,ecv FROM emp";
+$sql = "SELECT * FROM emp";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
