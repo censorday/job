@@ -237,9 +237,10 @@ table th {
 </section>
 
 <br>
-<h1>Previous Job</h1>
-<small><b>Recently submitted job will be shown below</b></small>
+<h1>Dream Job</h1>
+<small><b>Developed By Aman Vashishth</b></small>
 <br><br>
+
 
   </center>
 
