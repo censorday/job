@@ -426,7 +426,7 @@ color: white;
  <a href="/job.php"><input type="submit" value="Search a job" class="btn"></a>
   </form>
   
-<h5><i>( or search Jobs Made for you )<i></h5>
+<h5><i>( or Submit your Qualification to get Hired )<i></h5>
   
 <input onclick="window.location.href='/sbtcdd.php'" type="submit" value="Submit Qualification" class="btn2">
 </section>
