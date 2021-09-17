@@ -258,14 +258,9 @@ display: var(--rec);
 
 .bar{
  
-   max-width:65%;
-   height: 230px;
   border-radius: 12px;
-  text-align: left;
-  line-height: 100%;
   margin: 20px 0%;
-   
- padding:0px 2%;
+  padding:0px 2%;
   overflow: hidden;
    display: inline-block;
   background-color: white;
