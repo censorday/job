@@ -144,10 +144,10 @@ table th {
 <br>
 <h1>Submit Your Details</h1>
       
-<center>
+</center>
 </section>
 
-
+<center>
 <section>
 
 <div class='box' >
