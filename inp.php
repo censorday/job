@@ -625,11 +625,8 @@ $conn->close();
 <option value="Freelance">Freelance</option>
 <option value="Internship">Internship</option>
 <option value="Temporary">Temporary</option>
-</select><br><br>
-<small><b>Additional Qualification/Achivements: </b></small><br>
-   <textarea  placeholder=" "
-    class="form1"  name="dis" > </textarea>
-<br>
+</select><br>
+
 <input type="checkbox"  name="wfh" value="wfh">  <small><b>I Prefer Work From Home </b></small></input>
 <br><br>
    <small><b>CV/Resume: </b></small>
