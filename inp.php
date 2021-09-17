@@ -244,6 +244,18 @@ display: var(--rec);
 
 }
 
+
+.bigbar table {
+
+border: 1px solid #ccc;
+color:black;
+border-collapse: collapse;
+margin: 0;
+padding: 0;
+width: 100%;
+table-layout: fixed;
+}
+
 .bigbar:hover{
   box-shadow:10px 18px 15px #753a88;
     transform: scale(1.02);
