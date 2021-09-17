@@ -79,7 +79,6 @@ overflow:hidden;
   width:150px;
   height: calc(11.7 * 150px / 9);
   background-color: #2C7DFA;
-  align-items: center;
   border-radius: 12px;
   margin: 20px 5%;
   text-align: center;
@@ -432,19 +431,19 @@ color: white;
 <br>
 <section><center>
 <div class="card">  
-  <h2>Get</h2><br>
+  <h2>Get</h2>
   <h1>Jobs</h1><br>
   <p class="orange">Full-Time</p>
   <br>
 </div>
 <div class="card">  
-<h2>Get</h2><br>
+<h2>Get</h2>
   <h1>Jobs</h1><br>
 <P class="green">Work From Home</P>
   <br>
 </div>
 <div class="card">  
-<h2>Get</h2><br>
+<h2>Get</h2>
   <h1>Jobs</h1><br>
 <P class="red">Part-Time</P>
   <br>
