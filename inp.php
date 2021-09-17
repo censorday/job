@@ -486,21 +486,8 @@ color: white;
   
   <section  id="rec" class="rec"><h1><b>Recent Jobs</b></h1> 
   
-   <div class="bigbar">  <div class="bar"> 
-      <center><h3>Facebook</h3> </center>
-      <p>We require a person to manage facebook server and have proper web development  knowledge</p><br>
-    <p>   <b>Qualification :</b>M.Sc/B.Tech</p>
-     <p>  <b>Salary :</b>₹50000 - ₹55000</p>
-     <p>  <b>Location :</b>New Delhi</p>
-     </div>
-    
-    <div class="minibar">
-      <h3>Frontend Development</h3> 
-      <p class="orange">Partime</p>
-      <p ><button class="btn1">Apply Job</button></p>
-      <br>
-      </div>
-  </div>  
+  
+  
     
     
     
