@@ -547,7 +547,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<center><div class='box' ><table> <tr>
-      <th class="bigbar" >Company</th>
+      <th class='bigbar' >Company</th>
     <th>Post</th>
     <th>Salary</th>
     <th>Location</th>
