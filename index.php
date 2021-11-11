@@ -6,7 +6,7 @@
 
       :root {
         --rec: none;
-        /*Create Font*/
+        /*display recent jobs*/
       }
 
       body {
@@ -356,40 +356,44 @@
         <h2>(5ᵗʰ sem)</h2>
       </div>
     </center>
-    <section class="back">
-      <div class="sectop">
-        <div style="float: right;padding: 3%;">
-          <a href="/sbtjob.php" class="green">Publish a job</a>
-        </div>
-        <h2>ADVANCED JOB PROVIDING SYSTEM</h2>
-        <br>
-        <img class="img" src="https://avstudy.herokuapp.com/anim.png"></img>
-        <h3>Join Us</h3>
-        <h3 class="intro">DREAM-JOB</h3>
-        <small>
-          <p>(make your career with us)</p>
-        </small>
-      </div>
-    </section>
-    <section class="box">
-      <h2>New Job for New Generation</h2>
-      <br>
-      <div>
-        <a href="/job.php">
-          <input type="button" value="Find a Job" class="btn1">
-        </a>
-        <input type="button" onclick="window.location.href='/cdd.php'" value="Find a Candidate" class="btn1">
-      </div>
-      <br>
-      <form action='' method='GET'>
-        <input class="search" required name="search" type="text" value="
-																			<?php if(isset($_GET['search'])) {echo $_GET['serach'];}?>" placeholder='Search for your Desired Job, Place, Post'>
-        <button type="submit" class="btn">Search</button>
-        <br>
-        <br>
-        <div>
-      </form>
-      <center> <?php
+
+
+<section class="back">
+<div class="sectop"><div  style="float: right;padding: 3%;"><a  href="/sbtjob.php" class="green">Publish a job</a></div>
+<h2>ADVANCED JOB PROVIDING SYSTEM</h2>
+  <br>
+  <img class="img" src="https://avstudy.herokuapp.com/anim.png"></img> 
+  <h3>Join Us</h3>
+  <h3 class="intro">DREAM-JOB</h3>
+  
+   <small><p>(make your career with us)</p></small> 
+</div>      
+  </section>         
+<section class="box">  
+  <h2>New Job for New Generation</h2>
+  <br>
+<div >  
+  <a  href="/job.php" > <input  type="button" value="Find a Job" class="btn1"></a>
+  
+   <input type="button" onclick="window.location.href='/cdd.php'" value="Find a Candidate" class="btn1">
+
+  </div>
+ <br>
+
+
+<form action='' method='GET'>
+
+  <input  class="search" required name="search" type="text"  value="<?php if(isset($_GET['search'])) {echo $_GET['serach'];}?>"placeholder='Search for your Desired Job, Place, Post'>
+  <button type="submit" class="btn">Search</button>
+ <br> <br>
+ <div>
+
+</form>
+
+
+
+<center>
+<?php
 
 $servername = "sql307.epizy.com";
 $username = "epiz_30270344";
@@ -410,199 +414,201 @@ if ($conn->connect_error) {
       $query="SELECT * FROM comp WHERE CONCAT(company,post,city,type) LIKE '%$filtervalues%'";
       $query_run=mysqli_query($conn,$query);
 
-      ?> <div>
-          <center>
-            <h4> Followings are Search Results </h4>
-          </center>
-          <table>
-            <tr>
-              <th>Co. ID</th>
-              <th>Company</th>
-              <th>Post</th>
-              <th>Salary</th>
-              <th>Location</th>
-              <th>Category</th>
-              <th>Published on</th>
-              <th>Apply</th>
-            </tr> <?php
+      ?> 
+         <div ><center><h4> Followings are Search Results </h4></center>
+                    <table> <tr >
+                    <th>Co. ID</th>
+                    <th>Company</th>
+                    <th>Post</th>
+                    <th>Salary</th>
+                    <th>Location</th>
+                    <th>Category</th>
+                    <th>Published on</th>
+                    <th>Apply</th>
+                    </tr> 
+
+      
+      <?php
 if (mysqli_num_rows($query_run) > 0)
 {
     foreach ($query_run as $items)
     {
-?> <tr>
-              <td> <?=$items['id']; ?> </td>
-              <td> <?=$items['company']; ?> </td>
-              <td> <?=$items['post']; ?> </td>
-              <td> <?=$items['salary']; ?> </td>
-              <td> <?=$items['city']; ?> </td>
-              <td> <?=$items['type']; ?> </td>
-              <td> <?=$items['date']; ?> </td>
-              <td>
-                <a href='jobform.php?cid=
-																											<?=$items['id']; ?>&cn=
-																											<?=$items['company']; ?>&po=
-																											<?=$items['post']; ?>&sl=
-																											<?=$items['salary']; ?>&ct=
-																											<?=$items['city']; ?>&tp=
-																											<?=$items['type']; ?>&dt=
-																											<?=$items['date']; ?>'>
-                  <p class='btn1'>Apply Now</p>
-                </a>
-              </td>
-            </tr> <?php
+?>
+
+                 
+
+                     <tr>
+                      <td><?=$items['id']; ?></td>
+                     <td><?=$items['company']; ?></td>
+                     <td><?=$items['post']; ?></td>
+                     <td><?=$items['salary']; ?></td>
+                     <td><?=$items['city']; ?></td>
+                     <td><?=$items['type']; ?></td>
+                     <td><?=$items['date']; ?></td>
+                    <td> 
+      
+        <a href='jobform.php?cid=<?=$items['id']; ?>&cn=<?=$items['company']; ?>&po=<?=$items['post']; ?>&sl=<?=$items['salary']; ?>&ct=<?=$items['city']; ?>&tp=<?=$items['type']; ?>&dt=<?=$items['date']; ?>'>
+        <p  class='btn1'>Apply Now</p></a>
+      
+                     </td>
+                     </tr>   
+                
+                <?php
     }
 }
 else
 {
-?> <tr>
-              <td colspan="8">No record found</td>
-            </tr> <?php
-}
-}
 ?>
-          </table>
-        </div>
-      </center>
-      </div>
-      <h5>( or Submit your Qualification to get Hired )</h5>
-      <input onclick="window.location.href='/sbtcdd.php'" type="submit" value="Submit Qualification" class="btn2">
-    </section>
-    <br>
-    <section>
-      <center>
-        <div class="card">
-          <h2>Get</h2>
-          <h1>Jobs</h1>
-          <br>
-          <form action="cjob.php" method="post">
-            <button name="typ" value="Full-Time" class="blue">Full-Time</button>
-          </form>
-          <br>
-        </div>
-        <div class="card">
-          <h2>Get</h2>
-          <h1>Jobs</h1>
-          <br>
-          <form action="cjob.php" method="post">
-            <button name="typ" value="WFH" class="green">Work From Home</button>
-          </form>
-          <br>
-        </div>
-        <div class="card">
-          <h2>Get</h2>
-          <h1>Jobs</h1>
-          <br>
-          <form action="cjob.php" method="post">
-            <button name="typ" value="Part-Time" class="red">Part-Time</button>
-          </form>
-          <br>
-        </div>
-      </center>
-    </section>
-    <section id="pplr" class="sec2">
-      <h2>Popular Jobs</h2>
-      <br>
-      <from class="frm">
-        <input type="text" class="form" placeholder="eg. Garphic. Web Developer">
-        <select name="" id="" class="form">
-          <option value="">Category</option>
-          <option value="">Full Time</option>
-          <option value="">Part Time</option>
-          <option value="">Freelance</option>
-          <option value="">Internship</option>
-          <option value="">Temporary</option>
-        </select>
-        <select name="" id="" class="form">
-          <option value="">Location</option>
-          <option value="">Delhi</option>
-          <option value="">Noida</option>
-          <option value="">Chennai</option>
-          <option value="">Gurugram</option>
-          <option value="">Chandigarh</option>
-          <option value="">Mumbai</option>
-          <option value="">Banglore</option>
-        </select>
-        <a href="/job.php">
-          <input type="submit" value="Search a job" class="btn">
-        </a>
-        </form>
-        <br>
-        <hr style="width:50% ">
-        <br>
-        <input type="button" class="pplr" href="" value="Graphic Designer">
-        <input type="button" class="pplr" href="" value="Advertising  ">
-        <input type="button" class="pplr" href="" value="Web Development  ">
-        <input type="button" class="pplr" href="" value="Education & Training  ">
-        <input type="button" class="pplr" href="" value="Writing">
-        <input type="button" class="pplr" href="" value="Marketing & Sales ">
-        <input type="button" class="pplr" href="" value="PHP, Java Programming">
-        <input type="button" class="pplr" href="" value="Software development ">
-    </section>
-    <div>
-      <center>
-        <a href="/job.php">
-          <div class="card">
-            <br>
-            <h1>Popular Jobs</h1>
-            <br>
-          </div>
-        </a>
-        <a href="#rec" onclick="rec();">
-          <div class="card">
-            <br>
-            <h1>Recent Jobs</h1>
-            <br>
-          </div>
-        </a>
-      </center>
-    </div>
-    <section class="rec">
-      <h1>
-        <b>Recent Jobs</b>
-      </h1> <?php
+            <tr><td colspan="8">No record found</td></tr>   
+           <?php
+}
+}
+?>   
+   </table></div></center>
+  </div>
+
+  
+
+
+
+<h5>( or Submit your Qualification to get Hired )</h5>
+  
+<input onclick="window.location.href='/sbtcdd.php'" type="submit" value="Submit Qualification" class="btn2">
+</section>
+<br>
+<section><center>
+<div class="card">  
+  <h2>Get</h2>
+  <h1>Jobs</h1><br>
+     <form action="cjob.php" method="post" > 
+<button name="typ" value="Full-Time" class="blue">Full-Time</button>
+</form>
+  <br>
+</div>
+<div class="card">
+<h2>Get</h2>
+  <h1>Jobs</h1><br>
+   <form action="cjob.php" method="post" > 
+<button name="typ" value="WFH" class="green">Work From Home</button>
+</form>
+  <br>
+</div>
+<div class="card">  
+<h2>Get</h2>
+  <h1>Jobs</h1><br>
+   <form action="cjob.php" method="post" > 
+<button name="typ" value="Part-Time" class="red">Part-Time</button>
+</form>
+  <br>
+</div></center>
+</section>
+
+
+
+
+
+<section id="pplr" class="sec2"> <h2>Popular Jobs</h2>
+  <br>
+ <from class="frm">  
+<input type="text" class="form" placeholder="eg. Garphic. Web Developer">
+    
+<select name="" id="" class="form">
+<option value="">Category</option>
+<option value="">Full Time</option>
+<option value="">Part Time</option>
+<option value="">Freelance</option>
+<option value="">Internship</option>
+<option value="">Temporary</option>
+</select>
+    
+<select name="" id="" class="form">
+<option value="">Location</option>
+<option value="">Delhi</option>
+<option value="">Noida</option>
+<option value="">Chennai</option>
+<option value="">Gurugram</option>
+<option value="">Chandigarh</option>
+<option value="">Mumbai</option>
+<option value="">Banglore</option>
+</select>
+ 
+    
+ <a href="/job.php"><input type="submit" value="Search a job" class="btn"></a>
+  </form>
+
+
+<br><hr style="width:50% "><br>
+
+   <input type="button" class="pplr" href="" value="Graphic Designer">
+
+  <input type="button" class="pplr" href="" value="Advertising  ">  
+   
+   <input type="button" class="pplr" href="" value="Web Development  ">  
+   
+   <input type="button" class="pplr" href="" value="Education & Training  ">  
+   
+   <input type="button" class="pplr" href="" value="Writing">  
+   
+   <input type="button" class="pplr" href="" value="Marketing & Sales ">  
+   
+   <input type="button" class="pplr" href="" value="PHP, Java Programming"> 
+   
+   <input type="button" class="pplr" href="" value="Software development "> 
+
+
+
+
+
+</section>
+
+<div>
+<center>
+<a href="/job.php"><div  class="card">  
+  <br><h1 >Popular Jobs</h1>
+  <br>
+</div></a>
+<a  href="#rec" onclick="rec();"><div class="card">  
+<br><h1  >Recent Jobs</h1>
+  <br>  
+</div></a>
+</center>
+</div>
+  
+  <section  class="rec"><h1><b>Recent Jobs</b></h1> 
+  
+  
+  
+    
+    
+    
+<?php
 
 $sql = "SELECT * FROM comp ORDER BY id DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "
-																																														<center>
-																																															<div id='rec'  >
-																																																<table>
-																																																	<tr >
-																																																		<th>Company</th>
-																																																		<th>Post</th>
-																																																		<th>Salary</th>
-																																																		<th>Location</th>
-																																																		<th>Category</th>
-																																																		<th>Published on</th>
-																																																		<th>Apply</th>
-																																																	</tr>";  
+    echo "<center><div id='rec'  ><table> <tr >
+      <th>Company</th>
+    <th>Post</th>
+    <th>Salary</th>
+    <th>Location</th>
+    <th>Category</th>
+    <th>Published on</th>
+    <th>Apply</th>
+  </tr>";  
   
   
   
   // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo " 
-																																																	<tr >
-																																																		<td>  ". $row["company"]. "  </td>
-																																																		<td>  " . $row["post"] . "  </td>
-																																																		<td>  " .  $row["salary"] .
-        "  </td>
-																																																		<td> " . $row["city"] ."  </td>
-																																																		<td>  " . $row["type"] ." </td>
-																																																		<td> " . $row["date"] ."</td>
-																																																		<td>
-																																																			<a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
-																																																				<button  class='btn1'>Apply Now</button>
-																																																			</a>
-																																																		</td>
-																																																	</tr> ";
+        echo " <tr ><td>  ". $row["company"]. "  </td><td>  " . $row["post"] . "  </td><td>  " .  $row["salary"] .
+        "  </td><td> " . $row["city"] ."  </td><td>  " . $row["type"] ." </td><td> " . $row["date"] ."</td><td> 
+        <a href='jobform.php?cid=$row[id]&cn=$row[company]&po=$row[post]&sl=$row[salary]&ct=$row[city]&tp=$row[type]&dt=$row[date] '>
+        <button  class='btn1'>Apply Now</button></a>
+      
+        </td></tr> ";
     }
-    echo "
-																																																</table>
-																																															</div>
-																																														</center>";
+    echo "</table></div></center>";
 } 
 
 
@@ -613,21 +619,43 @@ else {
 
 $conn->close();
 ?>
-    </section>
-  </body>
-  <script>
-    window.onload = function() {
-      setTimeout(lod, 500)
-    };
 
-    function lod() {
-      let fd = "fadeOut 1s"
-      document.documentElement.style.setProperty('--lod', fd)
-    }
+    
+    
+    
+  </section>
+  
+  
 
-    function rec() {
-      let dsp = "block"
-      document.documentElement.style.setProperty('--rec', dsp)
-    }
-  </script>
+  
+  
+
+		
+	</body>	
+		<script>
+
+ window.onload = function(){
+   setTimeout(lod, 500)
+};
+
+	function lod() {
+	let fd = "fadeOut 1s"
+  document.documentElement.style.setProperty('--lod', fd)
+ 
+
+}
+
+
+
+
+		
+function rec() {
+
+	let dsp = "block"
+  document.documentElement.style.setProperty('--rec', dsp)
+}
+
+
+
+	</script>
 </html>
